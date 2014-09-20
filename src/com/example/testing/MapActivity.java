@@ -24,7 +24,12 @@ public class MapActivity extends ActionBarActivity {
 		  final Button buttonDiscoverable = (Button) findViewById(R.id.buttonDiscoverable);
 		  final Switch switchBluetooth = (Switch)findViewById(R.id.switchBluetooth);
 		  final BluetoothAdapter bluetooth = BluetoothAdapter.getDefaultAdapter();
-		  
+		  if (bluetooth.isEnabled()) {
+			  switchBluetooth.setChecked(true);
+		  }else
+		  {
+			  switchBluetooth.setChecked(false);
+		  }
 		  switchBluetooth.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 			    	if (isChecked)

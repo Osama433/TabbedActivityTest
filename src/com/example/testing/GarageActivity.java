@@ -19,7 +19,13 @@ public class GarageActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_garage);
 		final Switch switchView = (Switch)findViewById(R.id.switchView);
-		
+		FragmentManager fm = getFragmentManager();  
+		FragmentTransaction ft = fm.beginTransaction();  
+		GarageIconViewFragment fragmentGarageIconView = new GarageIconViewFragment(); 
+		GarageListViewFragment fragmentGarageListView = new GarageListViewFragment();
+		ft.replace(R.id.activity_garage, fragmentGarageIconView);
+   		
+		ft.commit(); 
 		
 		
 		switchView.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
