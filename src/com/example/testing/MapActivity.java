@@ -1,9 +1,19 @@
 package com.example.testing;
 
 import android.support.v7.app.ActionBarActivity;
+import android.bluetooth.BluetoothAdapter;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Switch;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 public class MapActivity extends ActionBarActivity {
 
@@ -11,6 +21,39 @@ public class MapActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_map);
+		  final Button buttonDiscoverable = (Button) findViewById(R.id.buttonDiscoverable);
+		  final Switch switchBluetooth = (Switch)findViewById(R.id.switchBluetooth);
+		  final BluetoothAdapter bluetooth = BluetoothAdapter.getDefaultAdapter();
+		  
+		  switchBluetooth.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+			    	if (isChecked)
+					{
+			    		if (!bluetooth.isEnabled()) {
+			    			startActivityForResult(new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE), 0);
+			    		}
+					}else
+					{
+						bluetooth.disable();
+					}
+			    }
+			});
+		  
+		  buttonDiscoverable.setOnClickListener(new View.OnClickListener() {
+		   @Override
+		   public void onClick(View arg0) {
+		    if (!bluetooth.isDiscovering()) {
+		     startActivityForResult(new Intent(
+		       BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE), 0);
+
+		     }
+		   }
+		  });
+		  
+		  
+		  
+		  
+		  
 	}
 
 	@Override

@@ -16,4 +16,31 @@
         android:layout_alignParentTop="true"
         android:text="Your Map"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" >
+    </TextView>
+
+    <Switch
+        android:id="@+id/switchBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/out"
+        android:layout_below="@+id/out"
+        android:layout_marginTop="37dp"
+        android:text="Bluetooth" />
+
+    <Button
+        android:id="@+id/buttonDiscoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/switchBluetooth"
+        android:layout_below="@+id/switchBluetooth"
+        android:layout_marginTop="24dp"
+        android:text="DISCOVERABLE" />
+    
+
 </RelativeLayout>

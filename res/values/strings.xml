@@ -15,5 +15,6 @@
     <string name="title_activity_wallet">WalletActivity</string>
     <string name="title_activity_bag">BagActivity</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
 
 </resources>
