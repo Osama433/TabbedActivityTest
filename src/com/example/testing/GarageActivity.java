@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
-public class GarageActivity extends ActionBarActivity {
+public class GarageActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +22,7 @@ public class GarageActivity extends ActionBarActivity {
 		FragmentManager fm = getFragmentManager();  
 		FragmentTransaction ft = fm.beginTransaction();  
 		GarageIconViewFragment fragmentGarageIconView = new GarageIconViewFragment(); 
-		GarageListViewFragment fragmentGarageListView = new GarageListViewFragment();
-		ft.replace(R.id.activity_garage, fragmentGarageIconView);
-   		
+		ft.replace(R.id.contentFrame, fragmentGarageIconView);
 		ft.commit(); 
 		
 		
@@ -36,13 +34,13 @@ public class GarageActivity extends ActionBarActivity {
 				GarageListViewFragment fragmentGarageListView = new GarageListViewFragment();
 		    	if (isChecked)
 				{
-		    		ft.replace(R.id.activity_garage, fragmentGarageListView);
+		    		ft.replace(R.id.contentFrame, fragmentGarageListView);
    		
 		    		ft.commit(); 
 				}else
 				{
 					
-					ft.replace(R.id.activity_garage, fragmentGarageIconView);
+					ft.replace(R.id.contentFrame, fragmentGarageIconView);
 		
 					ft.commit(); 
 				}

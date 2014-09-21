@@ -1289,7 +1289,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
-        public static final int LinearLayout01=0x7f06005e;
+        public static final int LinearLayout01=0x7f06005c;
         public static final int action_bar=0x7f06002d;
         public static final int action_bar_activity_content=0x7f060026;
         public static final int action_bar_container=0x7f06002c;
@@ -1301,7 +1301,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f060027;
         public static final int action_menu_presenter=0x7f060028;
         public static final int action_mode_close_button=0x7f060035;
-        public static final int action_settings=0x7f06005f;
+        public static final int action_settings=0x7f06005e;
         public static final int activity_chooser_view_content=0x7f060036;
         public static final int activity_garage=0x7f06004e;
         public static final int alignBounds=0x7f060002;
@@ -1309,7 +1309,7 @@ containing a value of this type.
         public static final int always=0x7f06001d;
         public static final int beginning=0x7f060023;
         public static final int bottom=0x7f060005;
-        public static final int buttonDiscoverable=0x7f060052;
+        public static final int buttonDiscoverable=0x7f060053;
         public static final int center=0x7f06000c;
         public static final int center_horizontal=0x7f06000a;
         public static final int center_vertical=0x7f060008;
@@ -1317,13 +1317,14 @@ containing a value of this type.
         public static final int clip_horizontal=0x7f06000f;
         public static final int clip_vertical=0x7f06000e;
         public static final int collapseActionView=0x7f06001f;
+        public static final int contentFrame=0x7f060050;
         public static final int default_activity_button=0x7f060039;
         public static final int dialog=0x7f060020;
         public static final int disableHome=0x7f06001a;
         public static final int dropdown=0x7f060021;
-        public static final int editText1=0x7f060057;
-        public static final int editText2=0x7f060059;
-        public static final int editText3=0x7f06005c;
+        public static final int editText1=0x7f060055;
+        public static final int editText2=0x7f060057;
+        public static final int editText3=0x7f06005a;
         public static final int edit_query=0x7f060041;
         public static final int end=0x7f060011;
         public static final int expand_activities_button=0x7f060037;
@@ -1338,13 +1339,15 @@ containing a value of this type.
         public static final int ifRoom=0x7f06001c;
         public static final int image=0x7f060038;
         public static final int left=0x7f060006;
+        public static final int listGarageView=0x7f06005d;
         public static final int listMode=0x7f060013;
+        public static final int listSchedule=0x7f060054;
         public static final int list_item=0x7f06003a;
         public static final int middle=0x7f060024;
         public static final int never=0x7f06001b;
         public static final int none=0x7f060022;
         public static final int normal=0x7f060012;
-        public static final int out=0x7f060050;
+        public static final int out=0x7f060051;
         public static final int progress_circular=0x7f060029;
         public static final int progress_horizontal=0x7f06002a;
         public static final int radio=0x7f060040;
@@ -1366,18 +1369,14 @@ containing a value of this type.
         public static final int split_action_bar=0x7f06002f;
         public static final int start=0x7f060010;
         public static final int submit_area=0x7f06004a;
-        public static final int switchBluetooth=0x7f060051;
+        public static final int switchBluetooth=0x7f060052;
         public static final int switchView=0x7f06004f;
         public static final int tabMode=0x7f060014;
-        public static final int tableRow1=0x7f060053;
-        public static final int tableRow2=0x7f060054;
-        public static final int tableRow3=0x7f060055;
-        public static final int tableRow4=0x7f060056;
         public static final int textView1=0x7f06004d;
-        public static final int textView2=0x7f060058;
-        public static final int textView3=0x7f06005a;
-        public static final int textView4=0x7f06005b;
-        public static final int textView5=0x7f06005d;
+        public static final int textView2=0x7f060056;
+        public static final int textView3=0x7f060058;
+        public static final int textView4=0x7f060059;
+        public static final int textView5=0x7f06005b;
         public static final int title=0x7f06003c;
         public static final int top=0x7f060004;
         public static final int top_action_bar=0x7f060031;
